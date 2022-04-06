@@ -1,0 +1,175 @@
+@import "./fonts.sass"
+@import "./media.sass"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Roboto', Arial, Helvetica, sans-serif  
+
+// .el-col
+//   border: dotted 1px darkcyan
+  
+body
+  overflow-x: hidden
+  max-width: 100vw
+  width: 100vw
+
+a
+  text-decoration: none
+  color: inherit
+
+#app
+  width: 100vw
+  overflow-x: hidden
+
+.content-full-width
+  flex: 1 1 auto
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-wrap: wrap
+
+.main-contaner
+  flex: 1 1 auto
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  padding: 0 $screen-padding
+
+  &__content
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    max-width: 1200px
+    padding: 1rem 0
+
+    .el-row
+      width: 100%
+
+.recolor-blue-button
+  background-color: $color-theme-blue
+  border-color: $color-theme-blue
+
+  &:hover
+    background-color: lighten($color-theme-blue, 20%)
+    border-color: lighten($color-theme-blue, 20%)
+
+.recolor-orange-button
+  background-color: $color-theme-orange
+  border-color: $color-theme-orange
+
+.recolor-blue-border
+  border-color: $color-theme-blue
+  color: $color-theme-blue
+
+  &:hover
+    background-color: lighten($color-theme-blue, 50%)
+    color: $color-theme-blue
+    border-color: $color-theme-blue
+
+h1
+  color: #333
+  font-family: Montserrat, Arial, Helvetica, sans-serif
+  margin-top: 1rem
+  margin-bottom: 1rem
+
+h2
+  color: #333
+  font-family: Montserrat, Arial, Helvetica, sans-serif
+  margin-top: 2rem
+  font-size: 2rem
+
+h3
+  margin-bottom: -1rem
+  color: $color-theme-blue-dark
+  font-family: Montserrat, Arial, Helvetica, sans-serif
+  font-size: 1.3rem
+
+h4
+  color: #777
+  font-size: 1rem
+  font-weight: normal
+  margin-top: -1rem
+
+h5
+  color: #333
+  font-family: Montserrat, Arial, Helvetica, sans-serif
+  font-size: 1.5rem
+
+.h1-roboto
+  color: #333
+  font:
+    size: 2rem
+    weight: bold
+  margin-bottom: 1rem
+
+.text
+  font-size: .9rem
+  line-height: 1.5rem
+  color: #333
+  margin-top: 1rem
+
+.el-button--default:hover
+  color: $color-theme-blue!important
+  border-color: $color-theme-blue!important
+  background-color: lighten($color-theme-blue, 55%)!important
+
+.el-button--default:focus
+  color: $color-theme-blue!important
+  border-color: $color-theme-blue!important
+  background-color: lighten($color-theme-blue, 55%)!important
+
+.el-form-item__label
+  padding: 0!important
+
+.dark-bg
+  position: fixed
+  z-index: $z-index-dark_bg
+  opacity: 0
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: rgba(0, 0, 0, .9)
+  display: none
+  justify-content: center
+  align-items: center
+
+.dark-bg--active
+  opacity: 1
+  display: flex
+  
+.carousel__viewport
+  width: 100%
+
+.carousel__prev,
+.carousel__next
+  border: solid 5px #fff!important
+  width: 40px!important
+  height: 40px!important
+  background-color: $color-theme-blue!important
+
+
+.swiper-button-prev,
+.swiper-button-next
+  color: #fff!important
+
+
+.el-loading-spinner
+    .path
+      stroke: $color-theme-blue
+      stroke-width: 4
+
+.el-upload--picture-card
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.el-upload-list__item
+  width: 100%!important
+  height: 100%!important

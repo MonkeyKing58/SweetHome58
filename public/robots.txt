@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /flatlist_for_work
+Disallow: /flatlist_for_work/
+
+Sitemap: https://www.sweethome58.ru/sitemap.xml
